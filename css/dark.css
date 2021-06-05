@@ -1,0 +1,129 @@
+body{
+    background: #30364f;
+}
+/* logo */
+.logo{
+    color: #ececec;
+}
+.logo:hover{
+    color: #ececec;
+}
+
+/* Search Bar */
+.search-bar label{
+    color: #ececec;
+    box-shadow: -5px -5px 8px #3c4463,
+                5px 5px 10px #24293b;
+}
+.search-bar label:hover{
+    box-shadow: -10px -10px 15px #3c4463,
+                10px 10px 15px #24293b;
+}
+#search-box{
+    background-color: #30364f !important;
+    color: #ececec;
+    box-shadow: -10px -10px 15px #3c4463,
+                10px 10px 15px #24293b !important;
+}
+#search-box:focus{
+    box-shadow: inset 27px 27px 54px #24293b,
+            inset -27px -27px 54px #3c4463 !important;
+}
+#notes p{
+    color:#ececec ;
+}
+/* card */
+.card{
+    background: #30364f;
+    box-shadow:  27px 27px 54px #24293b,
+             -27px -27px 54px #3c4463;
+}
+.heading,.card-title,.card-text{
+    color: #ececec;
+}
+/* input and textarea */
+input[type="text"],textarea{
+    color: #ececec !important;
+    background: #30364f !important;
+    box-shadow: inset 8px 8px 8px #24293b,
+                inset -8px -8px 8px #3c4463 !important;
+}
+input[type="text"]:focus,textarea:focus{
+background: #30364f !important;
+box-shadow: inset 8px 8px 8px #24293b,
+            inset -8px -8px 8px #3c4463 !important;
+}
+input[type="text"]::placeholder,textarea::placeholder{
+    color: #ececec !important;
+}
+
+/* Add Button */
+#add-btn{
+    background: #30364f;
+    border: 8px solid #30364f;
+    box-shadow: -10px -10px 15px #3c4463 ,
+                10px 10px 15px #24293b;
+}
+#add-btn i{
+    color: #ececec;
+}
+#add-btn:hover{
+    box-shadow: -10px -10px 15px #5f03f1,
+                10px 10px 15px #fa039b,
+                inset -10px -10px 15px #0435f8,
+                inset 10px 10px 15px #fa048b;
+}
+#add-btn:hover i{
+    color: #15e38a;
+}
+.remove-btn,.edit-btn{
+    color: white !important;
+    background: #30364f !important;
+    border: 5px solid #30364f !important;
+    box-shadow: -10px -10px 15px #3c4463,
+                10px 10px 15px #24293b;
+}
+.remove-btn:hover,.edit-btn:hover{
+    box-shadow: -10px -10px 15px #00ff55,
+                10px 10px 15px #0127ad,
+                inset -10px -10px 15px #3c4463,
+                inset 10px 10px 15px #24293b;
+}
+.remove-btn:hover{
+    color: #dc3545 !important;
+}
+.edit-btn:hover{
+    color: #b0dc35 !important;
+}
+/* Dark/Light Mode Toggle Button */
+.toggle{
+    box-shadow: -7px -7px 15px #ff0080, 
+                7px 7px 15px #24293b;
+}
+#toggle-btn{
+    border: 5px solid #ececec;
+    box-shadow: -7px -7px 15px #3c4463, 
+                7px 7px 15px #24293b,
+                inset -7px -7px 15px #3c4463,
+                inset 7px 7px 15px #24293b;
+
+}
+#toggle-btn:checked{
+    background-color: #30364f;
+    border: 5px solid #30364f;
+    box-shadow:  7px 7px 15px #292e43,
+             -7px -7px 15px #373e5b;
+}
+#toggle-btn:checked::before{
+    background-color: #ececec;
+    box-shadow:  7px 7px 15px #292e43,
+             -7px -7px 15px #373e5b;
+}
+#toggle-btn:checked::after{
+    font-family: "Font Awesome 5 Free";
+    font-size: large;
+    font-weight: 900;
+    content: "\f186";
+    color: #ececec;
+}
+

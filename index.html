@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+        <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+        <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Notify</title>
+</head>
+
+<body>
+    <!-- Nav Bar Starts -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" id="nav-bar">
+            <a class="navbar-brand mx-5 logo" href="index.html">Notify To Me?</a>
+            <input type="checkbox" name="search" id="search">
+            <div class="search-bar">
+                <input type="text" name="search-box" id="search-box" placeholder="Search Here...">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Nav Bar Ends -->
+
+    <!-- Dark/Light Mode Toggle Button -->
+    <div class="toggle">
+        <input type="checkbox" name="" id="toggle-btn" onclick="toggleTheme()">
+    </div>
+    <!-- Main Content -->
+    <div class="container-fluid main-content">
+        <div class="row justify-content-between my-4">
+            <div class="col-md-6">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h5 class="heading">Add Your Note Here</h5>
+                        <input type="text" id="addTitle" class="form-control" placeholder="Add Title Here...">
+                        <div class="mb-3">
+                            <textarea class="form-control" id="addText" rows="3"
+                                placeholder="Add Text Here..."></textarea>
+                        </div>
+                        <button class="btn btn-primary " id="add-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="row justify-content-evenly " id="notes">
+                    <p id="default">No Notes Yet! Add a note using the form above.</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Bootstrap CDN JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,210 @@
+/* logo */
+.logo{
+    font-family: 'Newsreader', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* Search Bar */
+#search{
+    display: none;
+}
+.search-bar{
+    position: relative;
+    top: 30%;
+    right: 3%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+}
+.search-bar label{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.search-bar label:hover{
+    transform: scale(1.1);
+}
+#search-box{
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 19px;
+    padding-left: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+#search:checked+.search-bar{
+    width: 300px;
+}
+#search:checked+.search-bar>#search-box{
+    opacity: 1;
+}
+#search:checked+.search-bar>label{
+    box-shadow: none;
+}
+#search:checked+.search-bar>label:hover{
+    transform: scale(1);
+}
+
+.main-content{
+    margin-top: 50px;
+}
+#notes p{
+    text-align: center;
+}
+
+/* card */
+.card{
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+.heading,.card-title{
+    font-family: 'Newsreader', serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.card-text{
+    font-family: 'Lato', sans-serif;
+}
+/* input and textarea */
+input[type="text"]{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    height: 50px;
+}
+input[type="text"],textarea{
+    font-family: 'Lato', sans-serif;
+    border: none !important;
+    outline: none !important;
+    border-radius: 20px !important;
+    padding-left: 20px !important;
+}
+input[type="text"]:focus,textarea:focus{
+    border-color: transparent !important;
+}
+
+/* Add Button */
+#add-btn{
+    position: relative;
+    left: 85%;
+    border-radius: 50%;
+    outline: none;
+}
+#add-btn i{
+    font-size: 25px;
+}
+
+.remove-btn{
+   margin-left: -10px;
+    margin-right: 15px;
+}
+.remove-btn,.edit-btn{
+    font-family: 'Newsreader', serif;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 40px;
+    outline: none;
+}
+.remove-btn i,.edit-btn i{
+    margin-left: 10px;
+}
+/* Dark/Light Mode Toggle Button */
+.toggle{
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    left: 85%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+#toggle-btn{
+    position: absolute;
+    width: 85px;
+    height: 30px;
+    -webkit-appearance: none;
+    left: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+
+}
+#toggle-btn::before,
+#toggle-btn::after{
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+transition: 0.3s ease;
+}
+#toggle-btn::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    left: 10px;
+    border-radius: 50%;
+}
+#toggle-btn::after{
+    width: 15px;
+    height: 15px;
+    right: -25px;
+    top: -10px;
+}
+#toggle-btn:checked::before{
+    left: 55px;
+}
+@media(max-width: 768px){
+    .toggle{
+        left: 75%;
+    }
+    .search-bar{
+        
+        left: 0%;
+    }
+}
+@media(max-width: 768px){
+    #nav-bar{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .search-bar{
+        margin-top: 30px;
+        left: 50%;
+    }
+    .toggle{
+        left: 80%;
+    }
+}
+@media(max-width: 576px){
+    .note-card{
+        width: 25rem !important;
+    }
+    .edit-btn{
+        position: relative;
+        left: 36%;
+     }
+}
+@media(max-width: 320px){
+    .edit-btn{
+        left: 22%;
+     }
+}

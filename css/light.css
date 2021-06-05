@@ -1,0 +1,110 @@
+body{
+    background: #ececec;
+}
+/* logo */
+.logo{
+    color: #30364f;
+}
+.logo:hover{
+    color: #30364f;
+}
+
+/* Search Bar */
+.search-bar label{
+    color: #30364f;
+    box-shadow: -5px -5px 8px #edeff1,
+                5px 5px 10px #cacfd8;
+}
+.search-bar label:hover{
+    box-shadow: -10px -10px 15px #edeff1,
+                10px 10px 15px #cacfd8;
+}
+#search-box{
+    color: #30364f;
+    box-shadow: -10px -10px 15px #edeff1,
+                10px 10px 15px #cacfd8 !important;
+}
+#search-box:focus{
+    box-shadow: inset 8px 8px 8px #c9c9c9,
+                inset -8px -8px 8px #ffffff !important;
+}
+
+/* card */
+.card{
+    background: #ececec;
+    box-shadow:  27px 27px 54px #b1b1b1,
+             -27px -27px 54px #ffffff;
+}
+.heading,.card-title,.card-text{
+    color: #30364f;
+}
+/* input and textarea */
+input[type="text"],textarea{
+    background: #ececec !important;
+    box-shadow: inset 8px 8px 8px #c9c9c9,
+                inset -8px -8px 8px #ffffff !important;
+}
+input[type="text"]:focus,textarea:focus{
+background: #ececec !important;
+box-shadow: inset 8px 8px 8px #c9c9c9,
+            inset -8px -8px 8px #ffffff !important;
+}
+
+/* Add Button */
+#add-btn{
+    background: white;
+    border: 8px solid #ececec;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+#add-btn i{
+    color: #30364f;
+}
+#add-btn:hover{
+    box-shadow: -10px -10px 15px rgba(202, 0, 0, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+#add-btn:hover i{
+    color: #15e38a;
+}
+.remove-btn,.edit-btn{
+    color: #30364f !important;
+    background: #ececec !important;
+    border: 5px solid #ececec !important;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.remove-btn:hover,.edit-btn:hover{
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.remove-btn:hover{
+    color: #dc3545 !important;
+}
+.edit-btn:hover{
+    color: #b0dc35 !important;
+}
+/* Dark/Light Mode Toggle Button */
+.toggle{
+    box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.75), 7px 7px 15px rgba(70, 70, 70, 0.15);
+}
+#toggle-btn{
+    border: 5px solid #ececec;
+    box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.75), 7px 7px 15px rgba(70, 70, 70, 0.15),
+                inset -7px -7px 15px rgba(255, 255, 255, 0.75),inset 7px 7px 15px rgba(70, 70, 70, 0.15);
+
+}
+#toggle-btn::before{
+    background-color: #30364f;
+    box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.75), 7px 7px 15px rgba(70, 70, 70, 0.15);
+}
+#toggle-btn::after{
+    font-family: "Font Awesome 5 Free";
+    font-size: large;
+    font-weight: 900;
+    content: "\f185";
+}
